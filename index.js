@@ -7,5 +7,10 @@ app.get("/", (req, res) => {
         res.send(text);
     });
 });
+app.get("/style.css", (req, res) => {
+    fs.readFile('./style.css', 'utf8', function(err, text){
+        res.send(text);
+    });
+});
 
 app.listen(process.env.PORT || 5000)
