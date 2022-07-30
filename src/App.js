@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="./style.css">
-    <title>Summer 2022 Classes</title>
-</head>
+import imag from './Schedule.png';
+import './index.css';
 
-<body>
+function App() {
+  return (
     <div class="container">
-        <Classes>
+        <div>
             <h1>Summer 2022 Classes</h1>
             <ul id="list">
                 
@@ -32,24 +29,10 @@
                         <li><a href="https://drive.google.com/drive/folders/1bPo01HriR8NZp0B_i_gqZ5nQZG57Os9r">Google Drive</a></li>
                     </ul>
                 </li>
-                <li><h3>CSCI 316</h3>
-                    <ul>
-                        <li><a href="https://bbhosted.cuny.edu/webapps/blackboard/content/listContent.jsp?course_id=_2134890_1&content_id=_65980492_1&mode=reset">Blackboard</a></li>
-                        <li><a href="https://yeshiva-university.zoom.us/j/92257799607">Zoom</a></li>
-                    </ul>
-                </li>
             </ul>
-        </Classes>
+        </div>
 
-
-        <!---------------------------------------------------Resources------------------------------------------------------------------>
-        <!---------------------------------------------------Resources------------------------------------------------------------------>
-        <!---------------------------------------------------Resources------------------------------------------------------------------>
-        <!---------------------------------------------------Resources------------------------------------------------------------------>
-        <!---------------------------------------------------Resources------------------------------------------------------------------>
-
-
-        <Resources>
+        <div>
 
             <h1>Resources</h1>
             <ul id="list">
@@ -59,7 +42,7 @@
                         <li><a href="https://docs.google.com/document/d/1kTWJvbfEdyp2TGLWopnneLdtJLsrnai-ug_I5yjjNng/edit?usp=sharing">Announcements</a></li>
                         <li><a href="https://gaia.cs.umass.edu/kurose_ross/ppt.php">PowerPoints</a></li>
                         <li><a href="https://drive.google.com/drive/folders/1XKGIaX7LykMU70AkZx968z666ysYrCeD?usp=sharing">Summer 2021 google drive</a></li>
-                        <li><a href="https://drive.google.com/drive/folders/1NnqB-4A_iH2x0BLkoGtNvX_0ZJ12a7rX?usp=sharing">Old HW & Exams</a></li>
+                        <li><a href="https://drive.google.com/drive/folders/1NnqB-4A_iH2x0BLkoGtNvX_0ZJ12a7rX?usp=sharing">Old HW and Exams</a></li>
                         <li><a href="https://quizlet.com/503955522/cs355-flash-cards/">Quizlet flashcards with some TopHat questions/answers</a></li>
                     </ul>
                 </li>
@@ -72,13 +55,15 @@
                     </ul>
                 </li>
             </ul>
-        </Resources>
+        </div>
         <shedule>
 
             <h1>Schedule</h1>
-            <img src="./Schedule.png" alt="">
+            <img src={imag} alt=""></img>
         </shedule>
         
     </div> 
-</body>
-</html>
+  );
+}
+
+export default App;
