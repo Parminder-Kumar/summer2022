@@ -3,7 +3,7 @@ const app = express()
 const fs = require("fs")
 
 app.get("/", (req, res) => {
-    fs.readFile(__dirname + './index.html', 'utf8', function(err, text){
+    fs.readFile('./index.html', 'utf8', function(err, text){
         res.send(text);
     });
 });
